@@ -1,0 +1,373 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    background-color:rgba(255, 255, 255, 0.5); 
+    background-image: url('/img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 30px 0px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px 10px 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color:  #ff1500; /* Change link color on hover */
+}
+
+/* Add margin-top to sections to avoid content being hidden behind the navbar */
+section {
+    padding-top: 70px; /* Adjust to navbar height */
+}
+
+
+/* Logo Styles */
+.logo img {
+    height: 100px; /* Adjust the height of the logo */
+    width: auto;  /* Maintain the aspect ratio */
+    display: block; /* Ensures no extra space around the image */
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    text-align: center;
+    padding: 20px 20px;
+    
+}
+
+.discription{
+    margin-top: 120px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-style: s;
+    color: #000000;
+}
+
+.Xletter {
+    color: red;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #1e1d1d;
+}
+
+.hero img {
+    width: 600px;
+    
+    max-width: 100%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.buttons .btn-read{
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px  20px ;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons .btn-read:hover {
+    background-color: #ff4a38;
+}
+
+/* Float Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Basic Styles for Features Section */
+.features {
+    padding: 40px 20px;
+    background-color: #f7f9fb;
+    text-align: center;
+}
+
+.features h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #666;
+}
+
+/* Hover Effect feature section */
+.feature-item:hover {
+    transform: scale(1.05); /* Slight zoom-in */
+    background-color: #74b3f8; /* Light background color */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+
+/* Team Section */
+.team {
+    background-color: #f9fafb;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    max-width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.team-member h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+}
+
+.contributors-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contributors-link:hover {
+    text-decoration: dashed;
+}
+
+
+/* Feedback Section */
+.feedback {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.feedback h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feedback-box {
+    background-color: #f9fafb;
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feedback-box:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.feedback-box p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.feedback-box h4 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Contributors Section */
+.contributors {
+    background-color: #f7f9fb;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.contributors h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.contributor-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contributor-member {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contributor-member:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.contributor-member p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contributor-member h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Scroll to top */
+
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 08px; /* Rounded corners */
+    font-size: 15px; /* Increase font size */
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  
+
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}

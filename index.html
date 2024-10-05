@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS UniXCloud</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/img/logo.png" alt="Logo" class="logo-img">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features-section">Features</a></li>
+                <li><a href="#team-section">Team</a></li>
+                <li><a href="contributors.html">Contributors</a></li>
+            </ul>
+            
+            
+        </nav>
+        <div class="hero">
+            <div class="discription">
+            <h1>CIS Uni<span class="Xletter">X</span>Cloud</h1>
+            <p>CIS UniXCloud is an educational platform for downloading and viewing lecture slides, notes, and recordings. We are now developing a website to offer the same convenience online, making it easy for students to access study materials from any device.</p>
+            
+            <div class="buttons">
+                <a href="#" class="btn-read">Download App Now</a>
+            </div>
+            </div>
+            <img src="/img/App Poster2.gif" alt="Mobile App">
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features-section" class="features">
+        <h2>Our Features</h2>
+        <div class="features-container">
+            <div class="feature-item">
+                <img src="/img/Icons/download.png" alt="Modern Technologies">
+                <h3>Download PDF</h3>
+                <p>Easily download lecture slides, notes in PDF format for offline access</p>
+            </div>
+            <div class="feature-item">
+                <img src="/img/Icons/viwePdf.png" alt="Scalability">
+                <h3>View PDF</h3>
+                <p>View your PDF documents directly within the app, with smooth and reliable performance</p>
+            </div>
+            <div class="feature-item">
+                <img src="/img/Icons/chache.png" alt="Multifunctional">
+                <h3>Cache System</h3>
+                <p>Store frequently accessed files locally for faster access, even with limited internet connectivity</p>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="features-container">
+            <div class="feature-item">
+                <img src="/img/Icons/notification.png" alt="Modern Technologies">
+                <h3>Notification System</h3>
+                <p>Get instant alerts for new lecture slides, notes, and recordings to stay updated</p>
+            </div>
+            <div class="feature-item">
+                <img src="/img/Icons/Share.png" alt="Scalability">
+                <h3>Share PDF</h3>
+                <p>Easily share lecture slides and notes in PDF format with others directly from the app.</p>
+            </div>
+            <div class="feature-item">
+                <img src="/img/Icons/TimeTable.png" alt="Multifunctional">
+                <h3>Time Table</h3>
+                <p>Access your Lecture schedule and upcoming events in one place, helping you stay organized and on track.</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Development and Support Team Section -->
+<section id="team-section" class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="/img/Admins and Contributers/sahan.jpg" alt="Team Member 1">
+            <h3>Sahan Lochana</h3>
+            <p>Lead Developer</p>
+        </div>
+        <div class="team-member">
+            <img src="/img/Admins and Contributers/theekshana.png" alt="Team Member 2">
+            <h3>Theekshana</h3>
+            <p>Content Manager</p>
+        </div>
+        <div class="team-member">
+            <img src="/img/Admins and Contributers/sashika.png" alt="Team Member 3">
+            <h3>Sashika Hansani</h3>
+            <p>Content Manager</p>
+        </div>
+    </div>
+    <p>Check out our <a href="contributors.html" class="contributors-link">contributors</a> who helped make this app possible.</p>
+</section>
+
+
+<!-- User Feedback Section -->
+<section class="feedback">
+    <h2>What Our Users Say</h2>
+    <div class="feedback-container">
+        <div class="feedback-box">
+            <p>"An amazing app for downloading and managing PDFs with fast speeds, strong security, and efficient file management. It also offers offline access and file sharing. Highly recommended!"</p>
+            <h4>- Nirosha Madhumali</h4>
+        </div>
+        <div class="feedback-box">
+            <p>"This app is wonderful and user friendly. I can do my academic studies property by using UnixCloud App good job guys."</p>
+            <h4>- Praveen</h4>
+        </div>
+        <div class="feedback-box">
+            <p>"The flexibility and ease of use have made this a go-to solution for our team."</p>
+            <h4>- Sarah Lee</h4>
+        </div>
+    </div>
+</section>
+
+<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Gaviru Bihan. All rights reserved.</p>
+    </footer>
+
+<script>
+    // Get the button
+let mybutton = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+</script>
+        
+</body>
+</html>

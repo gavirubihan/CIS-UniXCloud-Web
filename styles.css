@@ -60,6 +60,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color:  #ff1500; /* Change link color on hover */
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);;
 }
 
 /* Add margin-top to sections to avoid content being hidden behind the navbar */
@@ -119,17 +120,20 @@ section {
     margin-top: 50px;
 }
 
-.buttons .btn-read{
+.buttons .btn-dwnl{
     background-color: #ff6f61;
     color: white;
     padding: 10px  20px ;
     margin: 0 10px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.buttons .btn-read:hover {
+.buttons .btn-dwnl:hover {
+    transform: scale(1.05);
     background-color: #ff4a38;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    
 }
 
 /* Float Animation */
@@ -187,7 +191,7 @@ section {
 /* Hover Effect feature section */
 .feature-item:hover {
     transform: scale(1.05); /* Slight zoom-in */
-    background-color: #74b3f8; /* Light background color */
+    background-color: #78d1f1; /* Light background color */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
 }
 
@@ -280,7 +284,9 @@ section {
 }
 
 .feedback-box:hover {
-    transform: translateY(-10px); /* Hover effect */
+    transform: scale(1.05); /* Hover effect */
+    background-color: #78d1f1; /* Light background color */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
 }
 
 .feedback-box p {

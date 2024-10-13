@@ -27,7 +27,7 @@ header {
     background-image: url('/img/background.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    padding: 20px 30px 0px 30px;
+    padding: 0px 30px 0px 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,32 +36,56 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 40px 10px 5px;
+    padding: 15px 40px 10px 5px;
+    
 }
 
 nav ul {
-    display: flex;
+    
     justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0px 15px 10px 15px;
+    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
+    text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
-    padding: 10px;
+    display: block;
+    position: relative;
+    padding: 4px 0;
 }
 
-nav ul li a:hover {
-    color:  #ff1500; /* Change link color on hover */
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);;
+
+nav ul li a::before {
+    
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s transform ease;
+    transform: scale3d(0,1,1);
+    background: #E91E63;
+    transform-origin: 100% 50%;
+
 }
+
+nav ul li a:hover::before {
+    transform: scale3d(1,1,1);
+    transform-origin: 0 50%;
+}
+
+
 
 /* Add margin-top to sections to avoid content being hidden behind the navbar */
 section {
@@ -71,7 +95,7 @@ section {
 
 /* Logo Styles */
 .logo img {
-    height: 100px; /* Adjust the height of the logo */
+    height: 80px; /* Adjust the height of the logo */
     width: auto;  /* Maintain the aspect ratio */
     display: block; /* Ensures no extra space around the image */
 }

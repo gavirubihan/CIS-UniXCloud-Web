@@ -7,15 +7,43 @@
 }
 
 .contributors h1 {
-    font-size: 50px;
-    color: #333;
+    
     margin-bottom: 40px;
+    margin-top: 80px;
+
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #000000 0%,
+      #565656 29%,
+      #00bfff 70%,
+      #E91E63 80%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 50px;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  
 }
 
 .contributors h2 {
     font-size: 30px;
     color: #333;
     margin-bottom: 30px;
+    margin-top: 80px;
 }
 
 .contributor-container {
@@ -45,6 +73,8 @@
 
 .contributor-member:hover {
     transform: translateY(-10px); /* Hover effect */
+    background-color: #88f1f5;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contributor-member p {
@@ -98,6 +128,8 @@
 .day:hover {
     transform: translateY(-10px); /* Lift up on hover */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    background-color: #b3feff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .day h3 {

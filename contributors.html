@@ -12,7 +12,11 @@
     <!-- Header Section (Similar to Main Page) -->
     <header>
         <nav>
-            <div class="logo"><img src="img/logo.png" ></div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/img/logo.png" alt="Logo" class="logo-img">
+                </a>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 
@@ -30,8 +34,7 @@
                 <img src="/img/Admins and Contributers/Contributers/Shehan.png" alt="shehan">
                 <h3>Shehan</h3>
                 <div class="social-media">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="https://linkedin.com/in/shehan-perera-2642ba316/" class="fa fa-linkedin"></a>
                 </div>
             </div>
             <div class="contributor-member">
@@ -63,7 +66,8 @@
                 <h3>Gayathri</h3>
                 <div class="social-media">
                     <a href="https://fb.com/profile.php?id=100091407532069" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="https://www.linkedin.com/in/gayathri-isurika-058a27322" class="fa fa-linkedin"></a>
+                    <a href="https://instagram.com/_gayathri4_" class="fa fa-instagram"></a>
                 </div>
             </div>
             <div class="contributor-member">
@@ -71,7 +75,7 @@
                 <h3>Isuri</h3>
                 <div class="social-media">
                     <a href="https://instagram.com/isuri__dinelka/" class="fa fa-instagram"></a>
-                    <a href="https://www.linkedin.com/in/isuri-d-keshani-07ab21315/" class="fa fa-linkedin"></a>
+                    <a href="https://linkedin.com/in/isuri-d-keshani-07ab21315/" class="fa fa-linkedin"></a>
                 </div>
             </div>
             <div class="contributor-member">
@@ -94,8 +98,8 @@
                 <img src="/img/Admins and Contributers/Contributers/Thamaru.png" alt="thamaru">
                 <h3>Thamaru</h3>
                 <div class="social-media">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="https://instagram.com/thamaruu_u__" class="fa fa-instagram"></a>
+                    <a href="https://linkedin.com/in/thamaru-jalthotage-a78145245" class="fa fa-linkedin"></a>
                 </div>
             </div>
             <div class="contributor-member">
@@ -119,6 +123,7 @@
                 <h3>Hiruni</h3>
                 <div class="social-media">
                     <a href="https://fb.com/hiruni.yasoda.5" class="fa fa-facebook"></a>
+                    <a href="https://instagram.com/_h.yashu.s_/" class="fa fa-instagram"></a>
                     <a href="#" class="fa fa-linkedin"></a>
                 </div>
             </div>
@@ -155,11 +160,11 @@
                 </div>
             </div>
             <div class="contributor-member">
-                <img src="/img/Admins and Contributers/Contributers/empty.jpg" alt="dewmi">
+                <img src="/img/Admins and Contributers/Contributers/Dewmi.jpg" alt="dewmi">
                 <h3>Dewmi</h3>
                 <div class="social-media">
-                    <a href="https://fb.com/profile.php?id=61557254677792" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="https://instagram.com/dewmi_3/" class="fa fa-instagram"></a>
+                    <a href="https://linkedin.com/in/dewmi-gunawardana-b55785332/" class="fa fa-linkedin"></a>
                 </div>
             </div>
             <div class="contributor-member">
@@ -174,8 +179,8 @@
                 <img src="/img/Admins and Contributers/Contributers/Niranga.jpg" alt="niranga">
                 <h3>Niranga</h3>
                 <div class="social-media">
-                    <a href="https://fb.com/profile.php?id=61557254677792" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="fb.com/niranga.nayanajith.31" class="fa fa-facebook"></a>
+                    <a href="https://linkedin.com/in/niranga-nayanajith-548a0a302/" class="fa fa-linkedin"></a>
                 </div>
             </div>
             <div class="contributor-member">
@@ -207,7 +212,7 @@
                 <h3>Pasindu</h3>
                 <div class="social-media">
                     <a href="https://fb.com/profile.php?id=61557254677792" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="https://linkedin.com/in/pasindu-denuwan-35a0852b4/" class="fa fa-linkedin"></a>
                 </div>
             </div>
         </div>
@@ -330,9 +335,34 @@
         </div>
     </section>
 
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
+
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Gaviru Bihan. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Get the button
+    let mybutton = document.getElementById("scrollToTopBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+    
+    </script>
 </body>
 </html>

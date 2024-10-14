@@ -134,13 +134,20 @@ section {
 }
 
 .hero img {
-    width: 600px;
-    max-width: 100%;
+    max-width: 600px;
+    height: auto;
     animation: float 3s ease-in-out infinite;
+}
+
+@media (max-width: 600px) {
+    .hero img {
+        display: none;
+    }
 }
 
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
     justify-content: center;
    

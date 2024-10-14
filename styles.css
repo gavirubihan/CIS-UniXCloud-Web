@@ -201,6 +201,7 @@ section {
 
 .feature-item {
     background-color: #fff;
+    max-width: 400px ;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

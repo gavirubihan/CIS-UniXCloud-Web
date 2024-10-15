@@ -57,6 +57,12 @@ header {
     pointer-events: none;
 }
 
+@media (max-width: 600px) {
+    .cursor-dot, .cursor-outline {
+        display: none;
+    }
+}
+
 /* Navbar */
 nav {
     display: flex;

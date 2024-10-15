@@ -233,7 +233,8 @@
     text-align: center;
     text-decoration: none;
     margin: 2px 8px;
-    border-radius: 50%
+    border-radius: 50%;
+    cursor: none;
   }
   
 .fa:hover {

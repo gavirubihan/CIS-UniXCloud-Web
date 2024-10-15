@@ -7,6 +7,7 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #f0f2f5;
+    cursor: none;
 }
 
 a {
@@ -29,6 +30,31 @@ header {
     background-repeat: no-repeat;
     padding: 0px 30px 0px 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* cursor */
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(255, 0, 0);
+    
+}
+
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsla(193, 100%, 50%, 0.8);
+}
+
+.cursor-dot, .cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
 }
 
 /* Navbar */
@@ -62,6 +88,7 @@ nav ul li a {
     display: block;
     position: relative;
     padding: 4px 0;
+    cursor: none;
 }
 
 
@@ -161,6 +188,7 @@ section {
     flex-wrap: wrap;
     margin-top: 50px;
     justify-content: center;
+    
    
 }
 
@@ -171,6 +199,7 @@ section {
     margin: 0 10px 10px 10px;
     border-radius: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: none;
 }
 
 .buttons .btn-dwnl:hover {

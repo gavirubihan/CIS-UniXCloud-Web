@@ -42,3 +42,22 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari    
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
+
+//cursor
+const cursorDot = document.querySelector("[data-cursor-dot]");
+const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+window.addEventListener("mousemove", function (e) {
+    const posX = e.clientX;
+    const posY = e.clientY;
+
+    // Setting cursorDot position
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
+
+    // Animating cursorOutline
+    cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+    }, { duration: 500, fill: "forwards" });
+});

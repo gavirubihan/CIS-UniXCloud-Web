@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Contributors</title>
+    <title>Contributors</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contributors.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section (Similar to Main Page) -->
@@ -19,6 +20,8 @@
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="contributors.html" class="active">Contributors</a></li>
+                <li><a href="about.html">About us</a></li>
             </ul>
         </nav>
     </header>
@@ -333,6 +336,7 @@
         </div>
     </section>
 
+    
     <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
 
     <!-- Footer Section -->
@@ -340,27 +344,7 @@
         <p>&copy; 2024 Gaviru Bihan. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Get the button
-    let mybutton = document.getElementById("scrollToTopBtn");
+    <script src="script.js"></script>
     
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-    }
-    
-    </script>
 </body>
 </html>

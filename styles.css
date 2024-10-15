@@ -85,6 +85,11 @@ nav ul li a:hover::before {
     transform-origin: 0 50%;
 }
 
+nav ul li a.active,
+nav ul li a:hover {
+    color: #E91E63;
+}
+
 
 
 /* Add margin-top to sections to avoid content being hidden behind the navbar */

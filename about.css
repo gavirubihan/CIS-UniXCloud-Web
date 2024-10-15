@@ -33,16 +33,27 @@
     margin: 40px 0;
 }
 
-.stat-box {
+.stat-box1, .stat-box2 , .stat-box3{
     text-align: center;
 }
 
-.stat-box h2 {
+.stat-box1 h2 {
     font-size: 36px;
     color: #E91E63;
 }
 
-.stat-box p {
+.stat-box2 h2 {
+    font-size: 36px;
+    color: #00dee9;
+}
+
+.stat-box3 h2 {
+    font-size: 36px;
+    color: #000000;
+}
+
+
+.stat-box1 p, .stat-box2 p, .stat-box3 p  {
     font-size: 18px;
     color: #333;
 }

@@ -32,6 +32,12 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 600px) {
+    header {
+        padding: 0px 10px 0px 10px;
+    }
+}
+
 /* cursor */
 
 .cursor-dot {
@@ -70,6 +76,12 @@ nav {
     align-items: center;
     padding: 15px 40px 10px 5px;
     
+}
+@media (max-width: 600px) {
+    nav {
+        padding: 15px 5px 10px 10px;
+        
+    }
 }
 
 nav ul {
@@ -137,6 +149,13 @@ section {
     width: auto;  /* Maintain the aspect ratio */
     display: block; /* Ensures no extra space around the image */
     cursor: none;
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        margin-right: 50px;
+        
+    }
 }
 
 .logo a {

@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5;
+    background-color: #ffffff;
     cursor: none;
 }
 
@@ -24,7 +24,7 @@ h1, h3 {
 
 /* Header Section */
 header {
-    background-color:rgba(255, 255, 255, 0.5); 
+    background-color:rgb(255, 255, 255); 
     background-image: url('/img/background.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -136,6 +136,7 @@ section {
     height: 80px; /* Adjust the height of the logo */
     width: auto;  /* Maintain the aspect ratio */
     display: block; /* Ensures no extra space around the image */
+    cursor: none;
 }
 
 .logo a {
@@ -396,7 +397,7 @@ section {
     outline: none; /* Remove outline */
     background-color: red; /* Set a background color */
     color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
+    cursor: none; /* Add a mouse pointer on hover */
     padding: 10px; /* Some padding */
     border-radius: 08px; /* Rounded corners */
     font-size: 15px; /* Increase font size */

@@ -61,3 +61,28 @@ window.addEventListener("mousemove", function (e) {
         top: `${posY}px`
     }, { duration: 500, fill: "forwards" });
 });
+
+
+// Function to check if an element is in the viewport
+function isElementInView(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
+}
+
+// Add scroll event listener
+function scrollAnimation() {
+    const elements = document.querySelectorAll('.scroll-animation');
+
+    elements.forEach(el => {
+        if (isElementInView(el)) {
+            el.classList.add('show');
+        }
+    });
+}
+
+// Trigger animation on scroll and load
+window.addEventListener('scroll', scrollAnimation);
+window.addEventListener('load', scrollAnimation);

@@ -417,9 +417,8 @@ section {
     background-color: red; /* Set a background color */
     color: white; /* Text color */
     cursor: none; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
+    padding: 5px; /* Some padding */
     border-radius: 08px; /* Rounded corners */
-    font-size: 15px; /* Increase font size */
   }
   
   #scrollToTopBtn:hover {

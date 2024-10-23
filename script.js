@@ -1,3 +1,20 @@
+// Wait until the entire page is loaded
+window.addEventListener("load", function() {
+    const loadingScreen = document.getElementById("loading-screen");
+    // Start fade-out
+    loadingScreen.style.opacity = "0";
+
+    // After fade-out ends, remove the loading screen from the DOM
+    loadingScreen.addEventListener("transitionend", function() {
+        loadingScreen.remove();
+    });
+});
+
+
+
+
+
+
 // Get allValues using querySelectorAll
 let allValues = document.querySelectorAll(".value");
 

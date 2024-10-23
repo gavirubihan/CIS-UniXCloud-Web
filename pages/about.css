@@ -80,7 +80,7 @@
 }
 
 .feature-list li:before {
-    content: '\f00c'; /* Font Awesome check icon */
+    content: '\f00c'; 
     font-family: FontAwesome;
     color: #E91E63;
     position: absolute;

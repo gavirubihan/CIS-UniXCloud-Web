@@ -213,14 +213,14 @@ section {
     color: #1e1d1d;
 }
 
-.hero img {
+.hero picture img {
     max-width: 600px;
     height: auto;
     animation: float 3s ease-in-out infinite;
 }
 
 @media (max-width: 600px) {
-    .hero img {
+    .hero picture img {
         display: none;
     }
 }

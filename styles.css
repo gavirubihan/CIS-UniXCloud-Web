@@ -8,6 +8,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
     cursor: none;
+    
+
 }
 
 a {
@@ -30,21 +32,53 @@ header {
     background-repeat: no-repeat; */
     padding: 0px 30px 0px 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(300deg, #5ed7ef, #3ff6ce, #4ff6ff, #587fff);
-	background-size: 400% 400%;
-	animation: gradient 9s ease infinite;
+    background: linear-gradient(315deg, rgb(107, 219, 211) 3%, rgb(85, 198, 243) 38%, rgb(38, 176, 227) 50%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
 }
+
+.wave {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 10em;
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transform: translateX(0); /* Starting position for animation */
+    overflow: hidden;
+}
+
+/* Separate animation for each wave */
+.wave1 {
+    animation: wave 5s linear infinite;
+}
+.wave2 {
+    bottom: -1.25em;
+    animation: wave 15s linear reverse infinite;
+    opacity: 0.7;
+}
+.wave3 {
+    bottom: -2.5em;
+    animation: wave 18s linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes wave {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-25%); }
+    100% { transform: translateX(0); }
+}
+
 
 
 
@@ -184,6 +218,8 @@ section {
     display: flex;
     text-align: center;
     padding: 20px 20px;
+    position: relative;
+    z-index: 1; 
     
 }
 
@@ -260,6 +296,8 @@ section {
         transform: translateY(-10px);
     }
 }
+
+
 
 /* Basic Styles for Features Section */
 .features {

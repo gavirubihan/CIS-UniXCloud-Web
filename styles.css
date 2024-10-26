@@ -32,7 +32,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: linear-gradient(300deg, #5ed7ef, #3ff6ce, #4ff6ff, #587fff);
 	background-size: 400% 400%;
-	animation: gradient 12s ease infinite;
+	animation: gradient 9s ease infinite;
 }
 @keyframes gradient {
 	0% {

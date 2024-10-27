@@ -506,9 +506,56 @@ section {
 
 /* Footer Section */
 footer {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: #333;
     color: white;
     font-size: 14px;
+}
+
+.footer-copyright {
+    margin-left: 100px;
+    font-size: 14px;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin-right: 100px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-nav li {
+    display: inline;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    .footer-nav {
+        justify-content: center; /* Center-aligns nav links */
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .footer-copyright {
+        margin-left: 0;
+    }
 }

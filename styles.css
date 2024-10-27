@@ -526,11 +526,12 @@ footer {
     padding: 0;
     margin-right: 100px;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
 .footer-nav li {
-    display: flex;
+    display: inline;
 }
 
 .footer-nav a {

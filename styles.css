@@ -530,7 +530,7 @@ footer {
 }
 
 .footer-nav li {
-    display: inline;
+    display: flex;
 }
 
 .footer-nav a {

@@ -1,10 +1,15 @@
 // Wait until the entire page is loaded
 window.addEventListener("load", function() {
-    // Hide the loading screen
-    document.getElementById("loading-screen").style.display = "none";
-    // Show the main content
-    document.getElementById("main-content").style.display = "block";
+    const loadingScreen = document.getElementById("loading-screen");
+    // Start fade-out
+    loadingScreen.style.opacity = "0";
+
+    // After fade-out ends, remove the loading screen from the DOM
+    loadingScreen.addEventListener("transitionend", function() {
+        loadingScreen.remove();
+    });
 });
+
 
 
 

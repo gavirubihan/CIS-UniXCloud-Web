@@ -96,6 +96,7 @@ header {
     height: 100%;
     background: linear-gradient(315deg, rgb(112, 217, 210) 3%, rgb(58, 142, 231) 38%, rgb(38, 176, 227) 50%);
     animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
     display: flex;
     align-items: center;
     justify-content: center;

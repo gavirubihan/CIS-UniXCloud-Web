@@ -14,6 +14,7 @@ window.addEventListener("load", function() {
 
 
 
+
 // Get allValues using querySelectorAll
 let allValues = document.querySelectorAll(".value");
 

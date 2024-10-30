@@ -115,8 +115,8 @@ header {
 
 
 .loader {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     display: block;
     margin:15px auto;
@@ -130,10 +130,10 @@ header {
 @keyframes shadowPulse {
   33% {
     background: #FFF;
-    box-shadow: -24px 0 #FF3D00, 24px 0 #FFF;
+    box-shadow: -24px 0 #ff3c00, 24px 0 #FFF;
   }
   66% {
-    background: #FF3D00;
+    background: #ff3c00;
     box-shadow: -24px 0 #FFF, 24px 0 #FFF;
   }
   100% {
@@ -146,6 +146,7 @@ header {
 #loading-screen p {
     margin-top: 10px;
     font-size: 20px;
+    font-weight: bold;
     color: #000000;
 }
 

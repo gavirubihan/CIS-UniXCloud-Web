@@ -180,7 +180,7 @@ header {
 .cursor-outline {
     width: 40px;
     height: 40px;
-    border: 2px solid hsla(193, 100%, 50%, 0.8);
+    border: 2px solid hsla(176, 100%, 50%, 0.8);
 }
 
 .cursor-dot, .cursor-outline {
@@ -189,7 +189,7 @@ header {
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: 1;
+    z-index: 101;
     pointer-events: none;
 }
 

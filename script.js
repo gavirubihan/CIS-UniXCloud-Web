@@ -1,3 +1,14 @@
+// Wait until the entire page is loaded
+window.addEventListener("load", function() {
+    // Hide the loading screen
+    document.getElementById("loading-screen").style.display = "none";
+    // Show the main content
+    document.getElementById("main-content").style.display = "block";
+});
+
+
+
+
 // Get allValues using querySelectorAll
 let allValues = document.querySelectorAll(".value");
 

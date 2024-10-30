@@ -89,6 +89,68 @@ header {
     }
 }
 
+/* Fullscreen overlay for loading */
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    flex-direction: column; /* Stack the loader and text vertically */
+}
+
+
+.loader {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: block;
+    margin:15px auto;
+    position: relative;
+    background: #34d6d3;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+    box-sizing: border-box;
+    animation: shadowPulse 2s linear infinite;
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: #FFF;
+    box-shadow: -24px 0 #FF3D00, 24px 0 #FFF;
+  }
+  66% {
+    background: #FF3D00;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  }
+  100% {
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #FF3D00;
+  }
+}
+
+
+#loading-screen p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Make the loader smaller on smaller screens */
+@media (max-width: 600px) {
+    .loader {
+        width: 40px;
+        height: 40px;
+        border-width: 6px;
+    }
+    #loading-screen p {
+        font-size: 16px;
+    }
+}
+
+
 /* cursor */
 
 .cursor-dot {
@@ -481,7 +543,7 @@ section {
   }
   
 
-/* CSS Scroll animations */
+/* CSS Scroll Up animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;

@@ -143,16 +143,26 @@ header {
 }
 
 
-#loading-screen p {
-    margin-top: 10px;
-    font-size: 20px;
+.loading-text {
+    font-size: 18px;
+    color: #303030e6;
     font-weight: bold;
-    color: #000000;
+    letter-spacing: 0.1em;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
 }
 
 /* Make the loader smaller on smaller screens */
 @media (max-width: 600px) {
-    #loading-screen p {
+    .loading-text{
         font-size: 16px;
     }
 }

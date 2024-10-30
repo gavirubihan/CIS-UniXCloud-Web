@@ -26,7 +26,19 @@ To run the project locally:
     cd cis-unixcloud
     ```
 
-2. **Open the `index.html` file in your browser** to view the website.
+2. **Open Project in VS Code**: Open the folder where this project is stored by choosing `File > Open Folder` in VS Code.
+
+3. **Install Live Server Extention** (if not installed):
+   - Go to the Extensions tab in VS Code (you can use the shortcut `Ctrl+Shift+X`).
+   - Search for "Live Server" and click **Install**.
+   
+4. **Run with Live Server**:
+   - In the project folder, find the `index.html` file.
+   - Right-click `index.html` and select **Open with Live Server**.
+   - This will open a browser window showing the site running correctly.
+   
+> **Note**: If you open `index.html` directly (e.g., by double-clicking), the site may not load correctly because some resources require the Live Server environment to function properly.
+
 
 ## Contributing
 

@@ -51,8 +51,8 @@
 .contributors h2:before {
     content: "";
     position: absolute;
-    left: 50%; /* Center the pseudo-element */
-    transform: translateX(-50%); /* Adjust for centering */
+    left: 50%; 
+    transform: translateX(-50%); 
     bottom: 0;
     height: 5px;
     width: 55px;
@@ -61,8 +61,8 @@
 .contributors h2:after {
     content: "";
     position: absolute;
-    left: 50%; /* Center the pseudo-element */
-    transform: translateX(-50%); /* Adjust for centering */
+    left: 50%; 
+    transform: translateX(-50%); 
     bottom: 2px;
     height: 1px;
     width: 95%;
@@ -91,12 +91,12 @@
     width: 150px;
     height: 150px;
     border-radius: 5%;
-    border: 3px solid #ddd; /* Light border around the image */
+    border: 3px solid #ddd; 
     margin-bottom: 10px;
 }
 
 .contributor-member:hover {
-    transform: translateY(-10px); /* Hover effect */
+    transform: translateY(-10px); 
     background-color: #88f1f5;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -116,7 +116,7 @@
 
 /* Slide Contributors Section */
 .slide-contributors {
-    background-color: #fefbfb; /* Light background color matching other sections */
+    background-color: #fefbfb; 
     padding: 20px 20px 40px 20px;
     text-align: center;
 }
@@ -135,8 +135,8 @@
 .slide-contributors h2:before {
     content: "";
     position: absolute;
-    left: 50%; /* Center the pseudo-element */
-    transform: translateX(-50%); /* Adjust for centering */
+    left: 50%; 
+    transform: translateX(-50%); 
     bottom: 0;
     height: 5px;
     width: 55px;
@@ -146,8 +146,8 @@
 .slide-contributors h2:after {
     content: "";
     position: absolute;
-    left: 50%; /* Center the pseudo-element */
-    transform: translateX(-50%); /* Adjust for centering */
+    left: 50%; 
+    transform: translateX(-50%); 
     bottom: 2px;
     height: 1px;
     width: 95%;
@@ -158,9 +158,9 @@
 
 .days-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
-    justify-content: center; /* Center the items horizontally */
-    gap: 50px; /* Space between the flex items */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 50px; 
 }
 
 .day-container {
@@ -169,18 +169,18 @@
 }
 
 .day {
-    background-color: #fff; /* White background for each day */
+    background-color: #fff; 
     max-width: 400px;
     padding: 20px 10px 0px 10px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .day:hover {
-    transform: translateY(-10px); /* Lift up on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-10px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
     background-color: #b3feff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -202,13 +202,13 @@
     width: 150px;
     height: 150px;
     border-radius: 5%;
-    border: 3px solid #ddd; /* Light border around the image */
+    border: 3px solid #ddd; 
     margin-bottom: 10px;
-    transition: transform 0.3s ease; /* Hover effect on the image */
+    transition: transform 0.3s ease; 
 }
 
 .contributor-card img:hover {
-    transform: scale(1.1); /* Zoom in effect on hover */
+    transform: scale(1.1); 
 }
 
 .contributor-card h3 {

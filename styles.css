@@ -259,15 +259,15 @@ nav ul li a:hover {
 
 /* Add margin-top to sections to avoid content being hidden behind the navbar */
 section {
-    padding-top: 70px; /* Adjust to navbar height */
+    padding-top: 70px; 
 }
 
 
 /* Logo Styles */
 .logo img {
-    height: 80px; /* Adjust the height of the logo */
-    width: auto;  /* Maintain the aspect ratio */
-    display: block; /* Ensures no extra space around the image */
+    height: 80px; 
+    width: auto;  
+    display: block; 
     cursor: none;
 }
 
@@ -353,7 +353,7 @@ section {
 .buttons .btn-dwnl:hover {
     transform: scale(1.05);
     background-color: #ff4a38;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
     
 }
 
@@ -415,9 +415,9 @@ section {
 
 /* Hover Effect feature section */
 .feature-item:hover {
-    transform: scale(1.05); /* Slight zoom-in */
-    background-color: #78d1f1; /* Light background color */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transform: scale(1.05); 
+    background-color: #78d1f1; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -455,7 +455,7 @@ section {
 }
 
 .team-member img:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.1); 
 }
 
 .team-member h3 {
@@ -509,9 +509,9 @@ section {
 }
 
 .feedback-box:hover {
-    transform: scale(1.05); /* Hover effect */
-    background-color: #78d1f1; /* Light background color */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transform: scale(1.05); 
+    background-color: #78d1f1; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .feedback-box p {
@@ -531,25 +531,23 @@ section {
 /* Scroll to top */
 
 #scrollToTopBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: none; /* Add a mouse pointer on hover */
-    padding: 5px; /* Some padding */
-    border-radius: 08px; /* Rounded corners */
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: red; 
+    color: white; 
+    cursor: none; 
+    padding: 5px; 
+    border-radius: 08px; 
   }
   
   #scrollToTopBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #555; 
   }
-  
-
 /* CSS Scroll Up animations */
 @keyframes fadeInUp {
     from {
@@ -576,7 +574,7 @@ section {
 /* Footer Section */
 footer {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -615,12 +613,12 @@ footer {
 
 @media (max-width: 600px) {
     footer {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         text-align: center;
     }
 
     .footer-nav {
-        justify-content: center; /* Center-aligns nav links */
+        justify-content: center; 
         margin-top: 10px;
         margin-right: 0;
     }
